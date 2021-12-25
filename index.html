@@ -1,0 +1,559 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Qi Zhang</title>
+  
+  <meta name="author" content="Qi Zhang">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/seal_icon.png">
+</head>
+
+<body>
+  <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:45%;max-width:40%">
+              <a href="images/QiZhang.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/QiZhang.jpg" class="hoverZoomLink"></a>
+            </td>
+            <td style="padding: 2.5%;width: 63%;vertical-align: middle;text-align: justify;">
+              <p style="text-align:left">
+                <name>Qi Zhang  (张琦)</name>
+              </p>
+              <!-- <p>
+                <subtitle>Reasercher <br> Tencent AI Lab</subtitle>
+              </p> -->
+              <p>
+                I am currently a Researcher in the Visual Computing Center @<a href="https://ai.tencent.com/ailab/en/index">Tencent AI Lab</a> to work with <a href="https://juew.org/">Dr. Jue Wang</a>. I do research in computer vision and computational photography, where my interests focus on camera calibration & motion estimation, image rectification, view synthesis & neural radiance fields (NeRF), 3D reconstruction, and light field imaging. 
+              </p>
+              <!-- <p>
+                I serve regularly as a reviewer for major computer vision conferences and journals including CVPR/ECCV/WACV/TOG/TPAMI.
+              </p> -->
+              <p>
+                Before joining Tencent AI Lab in Jun. 2021, I received my Ph.D. degree from the School of Computer Science of Northwestern Polytechnical University in 2021, I was supervised by <a href="https://teacher.nwpu.edu.cn/qwang.html"> Prof. Qing Wang</a>. I was a visiting student at the Australian National University (ANU) between Jul. 2019 to Aug. 2020, which was supervised by <a href="http://users.cecs.anu.edu.au/~hongdong/">Prof. Hongdong Li</a>. I received the Outstanding Doctoral Dissertation Award Nominee from China Computer Federation (CCF) in 2021. I also won the 2021 ACM Xi'an Doctoral Dissertation Award.
+              </p>
+              <p>
+                If you are interested in the internship about view synthesis & NeRF, please feel free to drop me an email.
+              </p>
+              <p style="text-align:left">
+                <a href="mailto:nwpuqzhang@gmail.com">Email</a> &nbsp/&nbsp
+                <a href="data/JonBarron-CV.pdf">CV</a> &nbsp/&nbsp
+                <a href="data/JonBarron-bio.txt">Bio</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/citations?user=2vFjhHMAAAAJ&hl">Google Scholar</a> &nbsp/&nbsp
+                <a href="images/wechat.jpg">WeChat</a> &nbsp/&nbsp
+                <a href="https://github.com/qzhang-cv">Github</a>
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+          <td style="padding:20px;width:100%;vertical-align:middle;text-align: justify;">
+            <heading>Research</heading>
+            <p>
+              Please find below a complete list of my publications with representative papers <span class="highlight">highlighted</span>. The IEEE TPAMI,TIP, IJCV are top journals in the field of computer vision and computational photography. The CVPR is the premier conference in Computer Vision research community. 
+            </p>
+          </td>
+        </tr>
+      </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <!-- HDR-NeRF -->
+          <tr onmouseout="hdr_nerf_stop()" onmouseover="hdr_nerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='hdr_nerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/dreamfield_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/dreamfield_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function hdr_nerf_start() {
+                  document.getElementById('hdr_nerf_image').style.opacity = "1";
+                }
+
+                function hdr_nerf_stop() {
+                  document.getElementById('hdr_nerf_image').style.opacity = "0";
+                }
+                hdr_nerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://shsf0817.github.io/hdr-nerf/">
+                <papertitle>HDR-NeRF: High Dynamic Range Neural Radiance Fields</papertitle>
+              </a>
+              <br>
+              <a href="https://shsf0817.github.io/hdr-nerf/">Xin Huang</a>,
+              <strong>Qi Zhang</strong>,
+              <a href="https://shsf0817.github.io/hdr-nerf/">Ying Feng</a>,
+              <a href="http://users.cecs.anu.edu.au/~hongdong/">Hongdong Li</a>,
+              <a href="https://shsf0817.github.io/hdr-nerf/">Xuan Wang</a>,
+              <a href="https://teacher.nwpu.edu.cn/qwang.html">Qing Wang</a>
+              <br>
+        <em>arXiv</em>, 2021
+              <br>
+              <a href="https://shsf0817.github.io/hdr-nerf/">project page</a>
+        /
+              <a href="https://arxiv.org/abs/2111.14451">arXiv</a>
+        /
+              <a href="https://www.youtube.com/watch?v=GmxsW9L1O6s&ab_channel=XinHuang">video</a>
+              <p></p>
+              <p>prompts.</p>
+            </td>
+          </tr> 
+
+          <!-- Ha-NeRF -->
+          <tr onmouseout="hanerf_stop()" onmouseover="hanerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='hanerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/rawnerf.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/rawnerf.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function hanerf_start() {
+                  document.getElementById('hanerf_image').style.opacity = "1";
+                }
+
+                function hanerf_stop() {
+                  document.getElementById('hanerf_image').style.opacity = "0";
+                }
+                hanerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://rover-xingyu.github.io/Ha-NeRF/">
+                <papertitle>Hallucinated Neural Radiance Fields in the Wild</papertitle>
+              </a>
+              <br>
+              <a href="https://rover-xingyu.github.io/Ha-NeRF/">Xingyu Chen</a>,
+              <strong>Qi Zhang</strong>
+              <a href="https://xiaoyu258.github.io/">Xiaoyu Li</a>,
+              <a href="https://rover-xingyu.github.io/Ha-NeRF/">Yue Chen</a>,
+              <a href="https://rover-xingyu.github.io/Ha-NeRF/">Ying Feng</a>,
+              <a href="https://rover-xingyu.github.io/Ha-NeRF/">Xuan Wang</a>,
+              <a href="https://juew.org/">Jue Wang</a>
+              <br>
+							<em>arXiv</em>, 2021
+              <br>
+              <a href="https://rover-xingyu.github.io/Ha-NeRF/">project page</a>
+        /
+              <a href="https://arxiv.org/abs/2111.15246">arXiv</a>
+              <p></p>
+              <p>
+								Train.</p>
+            </td>
+          </tr> 
+          
+          <!-- Self-Calibration of LFC -->
+          <tr onmouseout="lfc_3d_stop()" onmouseover="lfc_3d_start()"  bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='lfc_3d_image'>
+                  <img src="images/lfc_3d_pipeline.jpg" width="200">
+                </div>
+                <img src='images/lfc_3d_tarser.jpg' width="200">
+              </div>
+              <script type="text/javascript">
+                function lfc_3d_start() {
+                  document.getElementById('lfc_3d_image').style.opacity = "1";
+                }
+
+                function lfc_3d_stop() {
+                  document.getElementById('lfc_3d_image').style.opacity = "0";
+                }
+                lfc_3d_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://link.springer.com/article/10.1007/s11263-021-01516-1">
+                <papertitle>3D Scene Reconstruction with an Un-calibrated Light Field Camera</papertitle>
+              </a>
+              <br>
+              <strong>Qi Zhang</strong>,
+              <a href="http://users.cecs.anu.edu.au/~hongdong/">Hongdong Li</a>,
+              <a href="https://teacher.nwpu.edu.cn/xwang.html">Xue Wang</a>,
+              <a href="https://teacher.nwpu.edu.cn/qwang.html">Qing Wang</a>
+              <br>
+							<em>International Journal of Computer Vision (IJCV)</em>, 2021
+              <br>
+              <a href="data/IJCV2021.pdf">PDF</a>
+              /
+              <a href="data/zhang20213d.bib">bibtex</a>
+              <p></p>
+              <p>This paper is concerned with the problem of multi-view 3D reconstruction with an un-calibrated micro-lens array based light field camera..</p>
+            </td>
+          </tr> 
+
+          <!-- lf_salient -->
+          <tr onmouseout="lf_salient_stop()" onmouseover="lf_salient_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/lf_salient.webp" alt="pipeline" width="200" >
+              <img src="images/lf_salient2.webp" alt="pipeline" width="200" >
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://link.springer.com/article/10.1007/s11042-020-08890-x">
+                <papertitle>Region-based Depth Feature Descriptor for Saliency Detection on Light Field</papertitle>
+              </a>
+              <br>
+              <a href="https://teacher.nwpu.edu.cn/xwang.html">Xue Wang</a>,
+              <a href="https://link.springer.com/article/10.1007/s11042-020-08890-x">Yingying Dong</a>,
+              <strong>Qi Zhang</strong>,
+              <a href="https://teacher.nwpu.edu.cn/qwang.html">Qing Wang</a>
+              <br>
+							<em>Multimedia Tools and Applications</em>, 2021
+              <br>
+              <a href="data/MTA2021.pdf">PDF</a>
+        /
+              <a href="data/wang2021region.bib">bibtex</a>
+              <p></p>
+              <p>
+								By reinterpreting the usage of dark channels in estimating the amount of defocus, a novel region-based depth feature descriptor (RDFD) defined over the focal stack is proposed.</p>
+            </td>
+          </tr> 
+
+          <!-- RSEG -->
+          <tr onmouseout="rseg_stop()" onmouseover="rseg_start()"  bgcolor="#ffffd0">
+            <td style="padding:10px;width:25%;vertical-align:top">
+              <div class="one">
+                <div class="two" id='rseg_image'>
+                  <img src="images/TPAMI2020_tarser.png" width="200">
+                </div>
+                <img src='images/TPAMI2020_tarser.png' width="200">
+              </div>
+              <script type="text/javascript">
+                function rseg_start() {
+                  document.getElementById('rseg_image').style.opacity = "1";
+                }
+
+                function rseg_stop() {
+                  document.getElementById('rseg_image').style.opacity = "0";
+                }
+                rseg_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/abstract/document/9204467">
+                <papertitle>Ray-Space Epipolar Geometry for Light Field Cameras</papertitle>
+              </a>
+              <br>
+              <strong>Qi Zhang</strong>,
+              <a href="https://teacher.nwpu.edu.cn/qwang.html">Qing Wang</a>,
+              <a href="http://users.cecs.anu.edu.au/~hongdong/">Hongdong Li</a>,
+              <a href="http://www.yu-jingyi.com/">Jingyi Yu</a>
+              <br>
+							<em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</em>, 2020
+              <br>
+              <a href="data/TPAMI2020RSEG.pdf">PDF</a>
+              /
+              <a href="data/zhang2020RSEG.bib">bibtex</a>
+              <p></p>
+              <p>This paper fills in this gap by developing a novel ray-space epipolar geometry which intrinsically encapsulates the complete projective relationship between two light fields.
+                Ray-space fundamental matrix and its properties are then derived to constrain ray-ray correspondences for general and special motions.
+              </p>
+            </td>
+          </tr> 
+
+          <!-- light field optical flow -->
+          <tr onmouseout="lfof_stop()" onmouseover="lfof_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='lfof_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/vase_small.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/tci_2019_taster.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function lfof_start() {
+                  document.getElementById('lfof_image').style.opacity = "1";
+                }
+
+                function lfof_stop() {
+                  document.getElementById('lfof_image').style.opacity = "0";
+                }
+                lfof_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/abstract/document/8637789">
+                <papertitle>Full View Optical Flow Estimation Leveraged From Light Field Superpixel</papertitle>
+              </a>
+              <br>
+              <a href="https://pakfa.github.io/zhuhao_photo.github.io/">Hao Zhu</a>,
+              <a href="https://ieeexplore.ieee.org/abstract/document/8637789">Xiaoming Sun</a>,
+              <strong>Qi Zhang</strong>,
+              <a href="https://teacher.nwpu.edu.cn/qwang.html">Qing Wang</a>,
+              Antonio Robles-Kelly, 
+              <a href="http://users.cecs.anu.edu.au/~hongdong/">Hongdong Li</a>,
+              Shaodi You
+              <br>
+							<em>IEEE Transactions on Computational Imaging</em>, 2019
+              <br>
+              <a href="data/TCI2019.pdf">PDF</a>
+        /
+              <a href="data/zhu2019full.bib">bibtex</a>
+              <p></p>
+              <p>
+								Train.</p>
+            </td>
+          </tr> 
+          
+          <!-- RSP -->
+          <tr onmouseout="rsp_stop()" onmouseover="rsp_start()"  bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='rsp_image'>
+                  <img src="images/cvpr2019_res.jpg" width="200">
+                </div>
+                <img src='images/RSP.png' width="200">
+              </div>
+              <script type="text/javascript">
+                function rsp_start() {
+                  document.getElementById('rsp_image').style.opacity = "1";
+                }
+
+                function rsp_stop() {
+                  document.getElementById('rsp_image').style.opacity = "0";
+                }
+                rsp_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/abstract/document/9204467">
+                <papertitle>Ray-Space Projection Model for Light Field Camera</papertitle>
+              </a>
+              <br>
+              <strong>Qi Zhang</strong>,
+              <a href="https://openaccess.thecvf.com/content_CVPR_2019/html/Zhang_Ray-Space_Projection_Model_for_Light_Field_Camera_CVPR_2019_paper.html">Jinbo Ling</a>,
+              <a href="https://teacher.nwpu.edu.cn/qwang.html">Qing Wang</a>,
+              <a href="http://www.yu-jingyi.com/">Jingyi Yu</a>
+              <br>
+							<em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2019
+              <br>
+              <a href="data/CVPR2019.pdf">PDF</a>
+              /
+              <a href="data/CVPR2019_supp.pdf">Supp</a>
+              /
+              <a href="data/zhang2019RSP.bib">bibtex</a>
+              <p></p>
+              <p>In the paper, we propose a novel ray-space projection model to transform sets of rays captured by multiple light field cameras in term of the Plucker coordinates.</p>
+            </td>
+          </tr>
+
+          <!-- TIP 2019 -->
+          <tr onmouseout="lf_super2019_stop()" onmouseover="lf_super2019_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='lf_super2019_image'>
+                  <img src="images/CVPR2017_tarser.gif" width="180">
+                </div>
+                <img src='images/TIP2019_tarser.gif' width="180">
+                <img src='images/TIP2019_tarser1.gif' width="180">
+                <img src='images/TIP2019_tarser2.gif' width="180">
+              </div>
+              <script type="text/javascript">
+                function lf_super2019_start() {
+                  document.getElementById('lf_super2019_image').style.opacity = "1";
+                }
+
+                function lf_super2019_stop() {
+                  document.getElementById('lf_super2019_image').style.opacity = "0";
+                }
+                lf_super2019_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/document/8763926">
+                <papertitle>4D Light Field Superpixel and Segmentation</papertitle>
+              </a>
+              <br>
+              <a href="https://pakfa.github.io/zhuhao_photo.github.io/">Hao Zhu</a>,
+              <strong>Qi Zhang</strong>,
+              <a href="https://teacher.nwpu.edu.cn/qwang.html">Qing Wang</a>, 
+              <a href="http://users.cecs.anu.edu.au/~hongdong/">Hongdong Li</a>
+              <br>
+							<em>IEEE Transactions on Image Processing (TIP)</em>, 2019
+              <br>
+              <a href="data/TIP2019.pdf">PDF</a>
+              /
+              <a href="data/zhu20194d.bib">bibtex</a>
+              <p></p>
+              <p>The light field superpixel (LFSP) is first defined mathematically and then a refocus-invariant metric named LFSP self-similarity is proposed to evaluate the segmentation performance.</p>
+            </td>
+          </tr>
+
+          <!-- ACCV -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src='images/accv2018_tarser.png' width="200">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://link.springer.com/chapter/10.1007/978-3-030-20876-9_2">
+                <papertitle>Common Self-polar Triangle of Concentric Conics for Light Field Camera Calibration</papertitle>
+              </a>
+              <br>
+              <strong>Qi Zhang</strong>, 
+              <a href="https://teacher.nwpu.edu.cn/qwang.html">Qing Wang</a>
+              <br>
+              <em>Asian Conference on Computer Vision</em>, 2008
+              <br>
+              <a href="data/ACCV2018.pdf">PDF</a>
+              /
+              <a href="">Supp</a>
+              /
+              <a href="data/zhang2018Common.bib">bibtex</a>
+              <p></p>
+              <p>Instead of a planar checkerboard, we propose to calibrate light field camera using a concentric conics pattern based on  the property and reconstruction of common self-polar triangle with respect to concentric circle and ellipse..</p>
+            </td>
+          </tr>
+
+          <!-- MPC -->
+          <tr onmouseout="mpc_stop()" onmouseover="mpc_start()"  bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='mpc_image'>
+                  <img src="images/TPAMI2018_TeserImage.jpg" width="210">
+                </div>
+                <img src='images/TPAMI2018_Tarser.png' width="200">
+                <img src='images/TPAMI2018_TPP.bmp' width="200">
+              </div>
+              <script type="text/javascript">
+                function mpc_start() {
+                  document.getElementById('mpc_image').style.opacity = "1";
+                }
+
+                function mpc_stop() {
+                  document.getElementById('mpc_image').style.opacity = "0";
+                }
+                mpc_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/abstract/document/8430574">
+                <papertitle>A Generic Multi-Projection-Center Model and Calibration Method for Light Field Camera</papertitle>
+              </a>
+              <br>
+              <strong>Qi Zhang</strong>,
+              <a href="https://ieeexplore.ieee.org/abstract/document/8430574">Chunping Zhang</a>,
+              <a href="https://ieeexplore.ieee.org/abstract/document/8430574">Jinbo Ling</a>,
+              <a href="https://teacher.nwpu.edu.cn/qwang.html">Qing Wang</a>,
+              <a href="http://www.yu-jingyi.com/">Jingyi Yu</a>
+              <br>
+							<em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2019
+              <br>
+              <a href="https://arxiv.org/abs/1808.02244">Arxiv</a>
+              /
+              <a href="data/TPAMI2018.pdf">PDF</a>
+              /
+              <a href="https://codeocean.com/capsule/9914149/tree/v2">Code</a>
+              /
+              <a href="data/zhang2018MPC.bib">bibtex</a>
+              <p></p>
+              <p>The MPC model can generally parameterize light field in different imaging formations, including conventional and focused light field cameras.</p>
+            </td>
+          </tr>
+
+          <!-- ICIP -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src='images/ICIP2017_tarser.gif' width=200>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/abstract/document/8296463">
+                <papertitle>Extending the FOV from disparity and color consistencies in multiview light fields</papertitle>
+              </a>
+              <br>
+              <a href="http://zhaoren.one/">Zhao Ren</a>
+              <strong>Qi Zhang</strong>, 
+              <a href="https://pakfa.github.io/zhuhao_photo.github.io/">Hao Zhu</a>,
+              <a href="https://teacher.nwpu.edu.cn/qwang.html">Qing Wang</a>
+              <br>
+              <em>IEEE International Conference on Image Processing (ICIP)</em>, 2017
+              <br>
+              <a href="data/ICIP2017.pdf">PDF</a>
+              /
+              <a href="data/ren2017extending.bib">bibtex</a>
+              <p></p>
+              <p>In contrast to previous methods, our algorithm is the first that achieves light field registration and rendering based on epipolar plane image (EPI) properties, including disparity and color consistencies. </p>
+            </td>
+          </tr>
+
+          <!-- CVPR -->
+          <tr onmouseout="lf_super_stop()" onmouseover="lf_super_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='lf_super_image'>
+                  <img src="images/CVPR2017_tarser.gif" width="180">
+                </div>
+                <img src='images/CVPR2017_tarser.gif' width="180">
+              </div>
+              <script type="text/javascript">
+                function lf_super_start() {
+                  document.getElementById('lf_super_image').style.opacity = "1";
+                }
+
+                function lf_super_stop() {
+                  document.getElementById('lf_super_image').style.opacity = "0";
+                }
+                lf_super_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openaccess.thecvf.com/content_cvpr_2017/html/Zhu_4D_Light_Field_CVPR_2017_paper.html">
+                <papertitle>4D Light Field Superpixel and Segmentation</papertitle>
+              </a>
+              <br>
+              <a href="https://pakfa.github.io/zhuhao_photo.github.io/">Hao Zhu</a>,
+              <strong>Qi Zhang</strong>,
+              <a href="https://teacher.nwpu.edu.cn/qwang.html">Qing Wang</a>
+              <br>
+							<em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2017
+              <br>
+              <a href="data/CVPR2017.pdf">PDF</a>
+              /
+              <a href="data/zhu20174d.bib">bibtex</a>
+              <p></p>
+              <p>The light field superpixel (LFSP) is first defined mathematically and then a refocus-invariant metric named LFSP self-similarity is proposed to evaluate the segmentation performance.</p>
+            </td>
+          </tr>
+
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+          <td style="padding:20px;width:100%;vertical-align:middle">
+            <heading>Other Publications</heading>
+            <p>
+              <strong>Qi Zhang</strong>, Qing Wang. Common self-polar triangle of separate circles for light field camera calibration[J]. Xibei Gongye Daxue Xuebao/Journal of Northwestern Polytechnical University, 2021. <br>
+              <!-- Xue Wang, Yingying Dong, <strong>Qi Zhang</strong>, Qing Wang. <a href="https://link.springer.com/article/10.1007/s11042-020-08890-x">Region-based Depth Feature Descriptor for Saliency Detection on Light Field[J]</a>. Multimedia Tools and Applications, 2021, 80 (11): 16329-16346. <br> -->
+              Yaning Li, <strong>Qi Zhang</strong>, Xue Wang, Qing Wang. Light Field SLAM based on Ray-Space Projection Model[C]. Optoelectronic Imaging and Multimedia Technology VI, 2019. <br>
+              <strong>Qi Zhang</strong>, Xue Wang, Qing Wang. Light Field Planar Homography and Its Application[C]. Optoelectronic Imaging and Multimedia Technology VI, 2019. <br>
+            </p>
+          </td>
+        </tr>
+      </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                This template is a modification to Jon Barron's <a href="https://github.com/jonbarron/jonbarron_website">website</a>.
+                Feel free to clone it for your own use while attributing the original author <a href="https://jonbarron.info/">Jon Barron</a>.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
