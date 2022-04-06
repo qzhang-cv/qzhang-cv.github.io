@@ -62,6 +62,46 @@
         </tr>
       </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="mhi_stop()" onmouseover="mhi_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle;">
+              <div class="one">
+                <div class="two" id='mhi_image'><video  width="200" muted autoplay loop>
+                <source src="images/mhi_h.png" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/mhi_h.png' width="200">
+              </div>
+              <script type="text/javascript">
+                function mhi_start() {
+                  document.getElementById('mhi_image').style.opacity = "1";
+                }
+
+                function mhi_stop() {
+                  document.getElementById('mhi_image').style.opacity = "0";
+                }
+                mhi_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2204.00156">
+                <papertitle>Stereo Unstructured Magnification: Multiple Homography Image for View Synthesis</papertitle>
+              </a>
+              <br>
+              <strong>Qi Zhang*</strong>,
+              <a href="https://arxiv.org/abs/2204.00156">Xin Huang*</a>,
+              <a href="https://arxiv.org/abs/2204.00156">Ying Feng</a>,
+              <a href="https://teacher.nwpu.edu.cn/xwang.html">Xue Wang</a>,
+              <a href="http://users.cecs.anu.edu.au/~hongdong/">Hongdong Li</a>,
+              <a href="https://teacher.nwpu.edu.cn/qwang.html">Qing Wang</a>
+              <br>
+              <em>arXiv</em>, 2022
+              <br>
+              <a href="https://arxiv.org/abs/2204.00156">arXiv</a>
+              <p></p>
+              <p>We propose a novel multiple homography image (MHI) representation, comprising of a set of scene planes with fixed normals and distances, for view synthesis from stereo images. 
+                <!-- The key to our method is to model the physical imaging process, which dictates that the radiance of a scene point transforms to a pixel value in the LDR image with two implicit functions: a radiance field and a tone mapper.</p> -->
+            </td>
+          </tr> 
 
           <!-- HDR-NeRF -->
           <tr onmouseout="hdr_nerf_stop()" onmouseover="hdr_nerf_start()">
@@ -190,6 +230,7 @@
               <br>
 							<em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2022
               <br>
+              <a href="https://limacv.github.io/deblurnerf/">project page</a>
               <a href="https://arxiv.org/abs/2111.14292">arXiv</a>
               <p></p>
               <p>
@@ -233,6 +274,7 @@
               <br>
 							<em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2022
               <br>
+              <a href="https://mrtornado24.github.io/FENeRF/">project page</a>
               <a href="https://arxiv.org/abs/2111.15490">arXiv</a>
               <p></p>
               <p>
