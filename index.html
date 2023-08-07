@@ -10,10 +10,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <script src="https://kit.fontawesome.com/075b3b8c94.js" crossorigin="anonymous"></script> -->
   <link rel="icon" type="image/png" href="images/icon.png">
 </head>
 
 <body>
+
   <table
     style="width:100%;max-width:950px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
@@ -50,14 +53,18 @@
                       href="https://teacher.nwpu.edu.cn/qwang.html"> Prof. Qing Wang</a>.
                     I was a visiting student at the Australian National University (ANU) between Jul. 2019 to Aug. 2020,
                     which was supervised by <a href="http://users.cecs.anu.edu.au/~hongdong/">Prof. Hongdong Li</a>.
-                    I received the <strong>Outstanding Doctoral Dissertation Award Nominee</strong> from China Computer
-                    Federation
-                    (CCF) in 2021. I also won the 2021 ACM Xi'an Doctoral Dissertation Award and the 2023 NWPU Doctoral
-                    Dissertation Award.
+                    I received the <strong> <a
+                        href="https://www.ccf.org.cn/Awards/Awards_Recipients/2021/yxbsxwlwjtm/">Outstanding Doctoral
+                        Dissertation Award Nominee</a></strong> from China Computer Federation (CCF) in 2021. I also won
+                    the 2021 ACM Xi'an Doctoral Dissertation Award and the 2023 NWPU Doctoral Dissertation Award.
                   </p>
                   <p>
-                    If you are interested in the internship about neural rendering (e.g. NeRF, SDF, inverse rendering),
-                    digital avatars, please feel free to contact me via e-mail and wechat.
+                    At Tencent, I've worked on <a href="https://mp.weixin.qq.com/s/SW_PRYA1XtMRgHb8VKoV4w">4D Content
+                      Generation</a> and
+                    <a href="https://mp.weixin.qq.com/s/Ca-K9CrfQ3SO3JEDIu5MdQ">3D Chat on Tencetn Meeting</a> If you
+                    are interested in
+                    the internship about neural rendering (e.g. NeRF, SDF, inverse rendering),
+                    digital avatars, and 3D generation, please feel free to contact me via e-mail and wechat.
                   </p>
                   <p style="text-align:left">
                     <a href="mailto:nwpuqzhang@gmail.com">Email</a> &nbsp/&nbsp
@@ -78,7 +85,12 @@
                 <td style="padding:20px;width:100%;vertical-align:middle;text-align: justify;">
                   <heading>News</heading>
                   <p>
-
+                    &#127881;&#127881;2023.08: <b>LoD-NeuS </b> accetped to  <strong style="color: brown">SIGGRAPH Asia 2023</strong><br>
+                    &#127881;&#127881;2023.07: <b>Pyramid NeRF</b> accetped to  <strong style="color: brown">IJCV 2023</strong><br>
+                    &#127881;&#127881;2023.03: 7 papers (with 1 highlight paper) / 9 submissions accetped to <strong style="color: brown">CVPR 2023</strong>! <br>
+                    &#127881;&#127881;2022.08: 1 paper (journal track) accetped to  <strong style="color: brown">SIGGRAPH Asia 2022</strong><br>
+                    &#127881;&#127881;2022.03: 4 papers / 4 submissions accetped to  <strong style="color: brown">CVPR 2022</strong><br>
+                    &#127881;&#127881;2021.12: CCF Outstanding Doctoral Dissertation Award Nominee
                   </p>
                 </td>
               </tr>
@@ -103,6 +115,82 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+
+              <!-- LoD-NeuS -->
+                <td style="padding:20px;width:25%;vertical-align:middle;">
+                  <div class="paper-box">
+                    <div class="badge">SIGGRAPH Asia 2023</div>
+                    <img src="images/lod-neus.jpg" width="300">
+                  </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="">
+                    <papertitle>Anti-Aliased Neural Implicit Surfaces with Encoding Level of Detail
+                    </papertitle>
+                  </a>
+                  <br>
+                  <a href="">Yiyu Zhuang*</a>,
+                  <strong>Qi Zhang*</strong>,
+                  <a href="https://scholar.google.com/citations?user=PhkrqioAAAAJ&hl=en">Ying Feng</a>,
+                  <a href="https://zhuhao-nju.github.io/">Hao Zhu</a>,
+                  <a href="">Yao Yao</a>
+                  <a href="https://xiaoyu258.github.io/">Xiaoyu Li</a>,
+                  <a href="">Yanpei Cao</a>
+                  <a href="https://scholar.google.com/citations?user=4oXBp9UAAAAJ&hl=en">Ying Shan</a>,
+                  <a href="https://cite.nju.edu.cn/People/Faculty/20190621/i5054.html">Xun Cao</a>
+                  <br>
+                  <em>SIGGRAPH Asia</em>, 2023
+                  <br>
+                  <a href=""><i class="fa fa-home"></i>Project Page</a>
+                  /
+                  <a href=""><i class="fa fa-file-pdf-o"></i>arXiv</a>
+                  /
+                  <a href=""><i class="fa fa-github"></i>Code</a>
+                  <p></p>
+                  <p>
+                    Our method, called LoD-NeuS, adaptively encodes Level of Detail (LoD) features derived from
+                    the multi-scale and multi-convoluted tri-plane representation. By optimizing a neural Signal Distance
+                    Field (SDF), our method is capable of reconstructing high-fidelity geometry
+                  </p>
+                </td>
+              </tr>
+
+              <!-- Pramid-NeRF -->
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle;">
+                  <div class="paper-box">
+                    <div class="badge">IJCV 2023</div>
+                    <img src="images/ijcv_pyramid_NeRF.png" width="300">
+                  </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://lukeju.github.io/pyramid-website/">
+                    <papertitle>Pyramid NeRF: Frequency Guided Fast Radiance Field Optimization
+                    </papertitle>
+                  </a>
+                  <br>
+                  <a href="">Junyu Zhu*</a>,
+                  <a href="https://pakfa.github.io/zhuhao_photo.github.io/">Hao Zhu*</a>,
+                  <strong>Qi Zhang</strong>,
+                  <a>Fang Zhu</a>
+                  <a href="https://vision.nju.edu.cn/fc/d3/c29470a457939/page.htm">Zhan Ma</a>,
+                  <a href="https://cite.nju.edu.cn/People/Faculty/20190621/i5054.html">Xun Cao</a>
+                  <br>
+                  <em>International Journal of Computer Vision (IJCV)</em>, 2023
+                  <br>
+                  <a href="https://lukeju.github.io/pyramid-website/"><i class="fa fa-home"></i>Project Page</a>
+                  /
+                  <a href="https://link.springer.com/article/10.1007/s11263-023-01829-3"><i class="fa fa-file-pdf-o"></i>PDF</a>
+                  /
+                  <a href="https://github.com/lukeju/Pyramid-NeRF"><i class="fa fa-github"></i>Code</a>
+                  <p></p>
+                  <p>
+                    In this paper, we propose the Pyramid NeRF, which guides the NeRF training in a 'low-frequency
+                    first, high-frequency second' style using the image pyramids and could improve the training and
+                    inference speed at 15x and 805x, respectively.
+                  </p>
+                </td>
+              </tr>
 
               <!-- NeAI -->
               <tr>
@@ -131,11 +219,11 @@
                   <br>
                   <em>arXiv</em>, 2023
                   <br>
-                  <a href="https://yiyuzhuang.github.io/NeAI/">Project Page</a>
+                  <a href="https://yiyuzhuang.github.io/NeAI/"><i class="fa fa-home"></i>Project Page</a>
                   /
-                  <a href="https://yiyuzhuang.github.io/NeAI/">arXiv</a>
+                  <a href="https://arxiv.org/abs/2304.08757"><i class="fa fa-file-pdf-o"></i>arXiv</a>
                   /
-                  <a href="https://yiyuzhuang.github.io/NeAI/">Code</a>
+                  <a href="https://yiyuzhuang.github.io/NeAI/"><i class="fa fa-github"></i>Code</a>
                   <p></p>
                   <p>
                     We propose a fully differentiable framework named neural ambient illumination (NeAI) that uses
@@ -184,9 +272,9 @@
                   <br>
                   <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2023
                   <br>
-                  <a href="">Project Page</a>
+                  <a href=""><i class="fa fa-home"></i>Project Page</a>
                   /
-                  <a href="">arXiv</a>
+                  <a href=""><i class="fa fa-file-pdf-o"></i>arXiv</a>
                   <p></p>
                   <p>
                     We propose a new content-aware optimization framework to preserve both local conformal shape (e.g.
@@ -206,11 +294,11 @@
                   </div>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="">
+                  <a href="https://xhuangcv.github.io/neucam/">
                     <papertitle>Inverting the Imaging Process by Learning an Implicit Camera Model</papertitle>
                   </a>
                   <br>
-                  <a href="https://shsf0817.github.io/hdr-nerf/">Xin Huang</a>,
+                  <a href="https://xhuangcv.github.io/">Xin Huang</a>,
                   <strong>Qi Zhang</strong>,
                   <a href="https://scholar.google.com/citations?user=PhkrqioAAAAJ&hl=en">Ying Feng</a>,
                   <a href="http://users.cecs.anu.edu.au/~hongdong/">Hongdong Li</a>,
@@ -218,11 +306,11 @@
                   <br>
                   <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2023
                   <br>
-                  <a href="https://limacv.github.io/neuvf_web/">Project Page</a>
+                  <a href="https://xhuangcv.github.io/neucam/"><i class="fa fa-home"></i>Project Page</a>
                   /
-                  <a href="https://arxiv.org/abs/2111.14292">arXiv</a>
+                  <a href="https://arxiv.org/abs/2304.12748"><i class="fa fa-file-pdf-o"></i>arXiv</a>
                   /
-                  <a href="https://github.com/limacv/NeUVF">Code</a>
+                  <a href="https://github.com/xhuangcv/neucam/"><i class="fa fa-github"></i>Code</a>
                   <p></p>
                   <p>
                     this paper proposes a novel implicit camera model which represents the physical imaging process of a
@@ -243,11 +331,11 @@
                   </div>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://limacv.github.io/neuvf_web/">
+                  <a href="https://xhuangcv.github.io/lirf/">
                     <papertitle>Local Implicit Ray Function for Generalizable Radiance Field Representation</papertitle>
                   </a>
                   <br>
-                  <a href="https://shsf0817.github.io/hdr-nerf/">Xin Huang</a>,
+                  <a href="https://xhuangcv.github.io/">Xin Huang</a>,
                   <strong>Qi Zhang</strong>,
                   <a href="https://scholar.google.com/citations?user=PhkrqioAAAAJ&hl=en">Ying Feng</a>,
                   <a href="https://xiaoyu258.github.io/">Xiaoyu Li</a>,
@@ -256,11 +344,11 @@
                   <br>
                   <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2023
                   <br>
-                  <a href="https://limacv.github.io/neuvf_web/">Project Page</a>
+                  <a href="https://xhuangcv.github.io/lirf/"><i class="fa fa-home"></i>Project Page</a>
                   /
-                  <a href="https://arxiv.org/abs/2111.14292">arXiv</a>
+                  <a href="https://arxiv.org/abs/2304.12746"><i class="fa fa-file-pdf-o"></i>arXiv</a>
                   /
-                  <a href="https://github.com/limacv/NeUVF">Code</a>
+                  <a href="https://github.com/xhuangcv/lirf/"><i class="fa fa-github"></i>Code</a>
                   <p></p>
                   <p>
                     We propose LIRF (Local Implicit Ray Function), a generalizable neural rendering approach for novel
@@ -293,11 +381,11 @@
                   <br>
                   <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2023
                   <br>
-                  <a href="https://ezio77.github.io/DINER-website/">Project Page</a>
+                  <a href="https://ezio77.github.io/DINER-website/"><i class="fa fa-home"></i>Project Page</a>
                   /
-                  <a href="https://arxiv.org/abs/2211.07871">arXiv</a>
+                  <a href="https://arxiv.org/abs/2211.07871"><i class="fa fa-file-pdf-o"></i>arXiv</a>
                   /
-                  <a href="https://github.com/Ezio77/DINER">Code</a>
+                  <a href="https://github.com/Ezio77/DINER"><i class="fa fa-github"></i>Code</a>
                   <p></p>
                   <p>
                     In this paper, we find that such a frequency-related problem could be largely solved by re-arranging
@@ -332,11 +420,11 @@
                   <br>
                   <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2023
                   <br>
-                  <a href="https://rover-xingyu.github.io/L2G-NeRF/">Project Page</a>
+                  <a href="https://rover-xingyu.github.io/L2G-NeRF/"><i class="fa fa-home"></i>Project Page</a>
                   /
-                  <a href="https://arxiv.org/abs/2211.11505">arXiv</a>
+                  <a href="https://arxiv.org/abs/2211.11505"><i class="fa fa-file-pdf-o"></i>arXiv</a>
                   /
-                  <a href="https://github.com/rover-xingyu/L2G-NeRF">Code</a>
+                  <a href="https://github.com/rover-xingyu/L2G-NeRF"><i class="fa fa-github"></i>Code</a>
                   <p></p>
                   <p>
                     We propose L2G-NeRF, a Local-to-Global registration method for bundle-adjusting Neural Radiance
@@ -371,9 +459,9 @@
                   <br>
                   <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2023
                   <br>
-                  <a href="https://fanegg.github.io/UV-Volumes/">Project Page</a> /
-                  <a href="https://arxiv.org/abs/2203.14402">arXiv</a> /
-                  <a href="https://github.com/fanegg/UV-Volumes">Code</a> /
+                  <a href="https://fanegg.github.io/UV-Volumes/"><i class="fa fa-home"></i>Project Page</a> /
+                  <a href="https://arxiv.org/abs/2203.14402"><i class="fa fa-file-pdf-o"></i>arXiv</a> /
+                  <a href="https://github.com/fanegg/UV-Volumes"><i class="fa fa-github"></i>Code</a> /
                   <a href="https://youtu.be/JftQnXLMmPc">Video</a>
                   <p></p>
                   <p>
@@ -406,11 +494,11 @@
                   <br>
                   <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2023
                   <br>
-                  <a href="https://e4s2022.github.io/">Project Page</a>
+                  <a href="https://e4s2022.github.io/"><i class="fa fa-home"></i>Project Page</a>
                   /
-                  <a href="https://arxiv.org/abs/2211.14068">arXiv</a>
+                  <a href="https://arxiv.org/abs/2211.14068"><i class="fa fa-file-pdf-o"></i>arXiv</a>
                   /
-                  <a href="https://github.com/e4s2022/e4s">Code</a>
+                  <a href="https://github.com/e4s2022/e4s"><i class="fa fa-github"></i>Code</a>
                   <p></p>
                   <p>
                     We present a novel paradigm for high-fidelity face swapping that faithfully preserves the desired
@@ -442,11 +530,11 @@
                   <br>
                   <em>ACM Transactions on Graphics</em>, 2022
                   <br>
-                  <a href="https://limacv.github.io/neuvf_web/">Project Page</a>
+                  <a href="https://limacv.github.io/neuvf_web/"><i class="fa fa-home"></i>Project Page</a>
                   /
-                  <a href="https://arxiv.org/abs/2111.14292">arXiv</a>
+                  <a href="https://arxiv.org/abs/2111.14292"><i class="fa fa-file-pdf-o"></i>arXiv</a>
                   /
-                  <a href="https://github.com/limacv/NeUVF">Code</a>
+                  <a href="https://github.com/limacv/NeUVF"><i class="fa fa-github"></i>Code</a>
                   <p></p>
                   <p>
                     We try to introduce explicit parameters into implicit dynamic NeRF representations to achieve
@@ -487,11 +575,12 @@
                   <br>
                   <em>arXiv</em>, 2022
                   <br>
-                  <a href="https://arxiv.org/abs/2204.00156">arXiv</a>
+                  <a href="https://arxiv.org/abs/2204.00156"><i class="fa fa-file-pdf-o"></i>arXiv</a>
                   <p></p>
                   <p>We propose a novel multiple homography image (MHI) representation, comprising of a set of scene
                     planes with fixed normals and distances, for view synthesis from stereo images.
-                    <!-- The key to our method is to model the physical imaging process, which dictates that the radiance of a scene point transforms to a pixel value in the LDR image with two implicit functions: a radiance field and a tone mapper.</p> -->
+                    <!-- The key to our method is to model the physical imaging process, which dictates that the radiance of a 
+                      scene point transforms to a pixel value in the LDR image with two implicit functions: a radiance field and a tone mapper.</p> -->
                 </td>
               </tr>
 
@@ -506,22 +595,24 @@
                   </div>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://shsf0817.github.io/hdr-nerf/">
+                  <a href="https://xhuangcv.github.io/hdr-nerf/">
                     <papertitle>HDR-NeRF: High Dynamic Range Neural Radiance Fields</papertitle>
                   </a>
                   <br>
-                  <a href="https://shsf0817.github.io/hdr-nerf/">Xin Huang</a>,
+                  <a href="https://xhuangcv.github.io/">Xin Huang</a>,
                   <strong>Qi Zhang</strong>,
                   <a href="https://scholar.google.com/citations?user=PhkrqioAAAAJ&hl=en">Ying Feng</a>,
                   <a href="http://users.cecs.anu.edu.au/~hongdong/">Hongdong Li</a>,
-                  <a href="https://shsf0817.github.io/hdr-nerf/">Xuan Wang</a>,
+                  <a href="">Xuan Wang</a>,
                   <a href="https://teacher.nwpu.edu.cn/qwang.html">Qing Wang</a>
                   <br>
                   <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2022
                   <br>
-                  <a href="https://shsf0817.github.io/hdr-nerf/">Project Page</a>
+                  <a href="https://xhuangcv.github.io/hdr-nerf/"><i class="fa fa-home"></i>Project Page</a>
                   /
-                  <a href="https://arxiv.org/abs/2111.14451">arXiv</a>
+                  <a href="https://arxiv.org/abs/2111.14451"><i class="fa fa-file-pdf-o"></i>arXiv</a>
+                  /
+                  <a href="https://github.com/xhuangcv/hdr-nerf"><i class="fa fa-github"></i>Code</a>
                   /
                   <a
                     href="https://drive.google.com/drive/folders/1OTDLLH8ydKX1DcaNpbQ46LlP0dKx6E-I?usp=sharing">Dataset</a>
@@ -558,9 +649,9 @@
                   <br>
                   <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2022
                   <br>
-                  <a href="https://rover-xingyu.github.io/Ha-NeRF/">Project Page</a>
+                  <a href="https://rover-xingyu.github.io/Ha-NeRF/"><i class="fa fa-home"></i>Project Page</a>
                   /
-                  <a href="https://arxiv.org/abs/2111.15246">arXiv</a>
+                  <a href="https://arxiv.org/abs/2111.15246"><i class="fa fa-file-pdf-o"></i>arXiv</a>
                   <p></p>
                   <p>
                     This paper studies the problem of hallucinated NeRF: i.e. recovering a realistic NeRF at a different
@@ -593,9 +684,9 @@
                   <br>
                   <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2022
                   <br>
-                  <a href="https://limacv.github.io/deblurnerf/">Project Page</a>
+                  <a href="https://limacv.github.io/deblurnerf/"><i class="fa fa-home"></i>Project Page</a>
                   /
-                  <a href="https://arxiv.org/abs/2111.14292">arXiv</a>
+                  <a href="https://arxiv.org/abs/2111.14292"><i class="fa fa-file-pdf-o"></i>arXiv</a>
                   <p></p>
                   <p>
                     In this paper, we propose Deblur-NeRF, the first method that can recover a sharp NeRF from blurry
@@ -627,9 +718,9 @@
                   <br>
                   <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2022
                   <br>
-                  <a href="https://mrtornado24.github.io/FENeRF/">Project Page</a>
+                  <a href="https://mrtornado24.github.io/FENeRF/"><i class="fa fa-home"></i>Project Page</a>
                   /
-                  <a href="https://arxiv.org/abs/2111.15490">arXiv</a>
+                  <a href="https://arxiv.org/abs/2111.15490"><i class="fa fa-file-pdf-o"></i>arXiv</a>
                   <p></p>
                   <p>
                     A 3D-aware generator (FENeRF) is prorposed to produce view-consistent and locally-editable portrait
@@ -659,7 +750,7 @@
                   <br>
                   <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</em>, 2022
                   <br>
-                  <a href="data/TPAMI2020RSEG.pdf">PDF</a>
+                  <a href="data/TPAMI2020RSEG.pdf"><i class="fa fa-file-pdf-o"></i>PDF</a>
                   /
                   <a href="data/zhang2020RSEG.bib">bibtex</a>
                   <p></p>
@@ -705,7 +796,7 @@
                   <br>
                   <em>International Journal of Computer Vision (IJCV)</em>, 2021
                   <br>
-                  <a href="data/IJCV2021.pdf">PDF</a>
+                  <a href="data/IJCV2021.pdf"><i class="fa fa-file-pdf-o"></i>PDF</a>
                   /
                   <a href="data/zhang20213d.bib">bibtex</a>
                   <p></p>
@@ -735,7 +826,7 @@
                   <br>
                   <em>Multimedia Tools and Applications</em>, 2021
                   <br>
-                  <a href="data/MTA2021.pdf">PDF</a>
+                  <a href="data/MTA2021.pdf"><i class="fa fa-file-pdf-o"></i>PDF</a>
                   /
                   <a href="data/wang2021region.bib">bibtex</a>
                   <p></p>
@@ -771,7 +862,7 @@
                   <br>
                   <em>IEEE Transactions on Computational Imaging</em>, 2019
                   <br>
-                  <a href="data/TCI2019.pdf">PDF</a>
+                  <a href="data/TCI2019.pdf"><i class="fa fa-file-pdf-o"></i>PDF</a>
                   /
                   <a href="data/zhu2019full.bib">bibtex</a>
                   <p></p>
@@ -817,7 +908,7 @@
                   <br>
                   <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2019
                   <br>
-                  <a href="data/CVPR2019.pdf">PDF</a>
+                  <a href="data/CVPR2019.pdf"><i class="fa fa-file-pdf-o"></i>PDF</a>
                   /
                   <a href="data/CVPR2019_supp.pdf">Supp</a>
                   /
@@ -850,7 +941,7 @@
                   <br>
                   <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2017
                   <br>
-                  <a href="data/TIP2019.pdf">PDF</a>
+                  <a href="data/TIP2019.pdf"><i class="fa fa-file-pdf-o"></i>PDF</a>
                   /
                   <a href="data/zhu20194d.bib">bibtex</a>
                   <p></p>
@@ -876,7 +967,7 @@
                   <br>
                   <em>Asian Conference on Computer Vision</em>, 2018
                   <br>
-                  <a href="data/ACCV2018.pdf">PDF</a>
+                  <a href="data/ACCV2018.pdf"><i class="fa fa-file-pdf-o"></i>PDF</a>
                   /
                   <a href="">Supp</a>
                   /
@@ -924,11 +1015,11 @@
                   <br>
                   <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</em>, 2019
                   <br>
-                  <a href="https://arxiv.org/abs/1808.02244">Arxiv</a>
+                  <a href="https://arxiv.org/abs/1808.02244"><i class="fa fa-file-pdf-o"></i>arXiv</a>
                   /
-                  <a href="data/TPAMI2018.pdf">PDF</a>
+                  <a href="data/TPAMI2018.pdf"><i class="fa fa-file-pdf-o"></i>PDF</a>
                   /
-                  <a href="https://codeocean.com/capsule/9914149/tree/v2">Code</a>
+                  <a href="https://codeocean.com/capsule/9914149/tree/v2"><i class="fa fa-github"></i>Code</a>
                   /
                   <a href="data/zhang2018MPC.bib">bibtex</a>
                   <p></p>
@@ -956,7 +1047,7 @@
                   <br>
                   <em>IEEE International Conference on Image Processing (ICIP)</em>, 2017
                   <br>
-                  <a href="data/ICIP2017.pdf">PDF</a>
+                  <a href="data/ICIP2017.pdf"><i class="fa fa-file-pdf-o"></i>PDF</a>
                   /
                   <a href="data/ren2017extending.bib">bibtex</a>
                   <p></p>
